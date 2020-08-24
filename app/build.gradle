@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.antfortune.freeline'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+    defaultConfig {
+        applicationId "com.chuyu.nfc"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 2
+        versionName "2.0.1"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+
+    }
+    repositories {
+        // ...
+        maven { url "https://jitpack.io" }
+        maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.2.0'
+            }
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.github.HuanTanSheng:EasyPhotos:2.4.5'
+    implementation 'com.hjq:xxpermissions:6.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    compile 'me.immortalz:transitionhelper:2.3.4'
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:support-v4:27.1.1'
+    compile 'com.airbnb.android:lottie:2.3.1'
+    //    文字炫彩
+    compile 'com.hanks:htextview-base:0.1.6'
+    //星星
+    compile 'com.github.ome450901:SimpleRatingBar:1.4.2'
+    //    数字滚动
+    //    compile 'com.github.chaychan:PowerfulViewLibrary:1.2.1'
+    //下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    //版本 23以上（必须）
+    //tab栏
+    compile 'com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4'
+    //流式布局
+    //    compile 'com.nex3z:flow-layout:1.2.4'
+    compile 'me.shaohui:bottomdialog:1.1.9'
+    //    compile 'de.hdodenhof:circleimageview:2.2.0'
+    //阴影
+    compile 'com.lijiankun24:shadowlayout:1.1.0'
+    //鲁班压缩
+    compile 'top.zibin:Luban:1.1.8'
+    //dialog
+    compile 'cn.pedant.sweetalert:library:1.3'
+    //banner
+    compile 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    //    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.8@aar'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    //    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.yanzhenjie.nohttp:nohttp:1.1.1'
+    compile 'com.yanzhenjie.nohttp:okhttp:1.1.1'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'me.weyye.hipermission:library:1.0.7'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.journeyapps:zxing-android-embedded:3.5.0@aar'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.baoyz.actionsheet:library:1.1.7'
+    compile 'com.alibaba:fastjson:1.1.55.android'
+    compile 'cn.qqtheme.framework:WheelPicker:1.5.6'
+    compile 'cn.qqtheme.framework:FilePicker:1.5.5'
+    compile 'com.github.wendux:DSBridge-Android:master-SNAPSHOT'
+    compile 'com.aliyun.dpa:oss-android-sdk:2.4.5'
+    compile project(':pickerview')
+    compile project(':photopicker')
+    compile project(':imglibrary')
+    compile (name: 'alipaySdk-15.6.5-20190718211159-noUtdid', ext: 'aar')
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chuyu.nfc.cusview.ObservableScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    style="@style/MatchMatch"
+    android:overScrollMode="never">
+
+        <LinearLayout
+            style="@style/MatchMatch.Vertical"
+            android:paddingTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="共享元素（多个）"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp" />
+
+            <LinearLayout style="@style/MatchWrap.Horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sharelogo"
+                    android:transitionName="shareimg1" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sharelogo"
+                    android:transitionName="shareimg2" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sharelogo"
+                    android:transitionName="shareimg3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="图片浏览器"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp" />
+
+            <LinearLayout style="@style/MatchWrap.Horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sharelogo"
+                    android:transitionName="shareimg4" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sharelogo"/>
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sharelogo" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="滑入"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/huaru"
+                android:layout_width="103dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/sharelogo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="揭露"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/bt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:translationZ="10dp"
+                app:backgroundTint="@color/app_theme"
+                app:srcCompat="@drawable/add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Lottie"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/lottie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动画演示"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="悬浮头"
+                android:textColor="@color/app_theme"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/xuanfu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="页面演示"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+</com.chuyu.nfc.cusview.ObservableScrollView>

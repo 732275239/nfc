@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:background="@color/Layoutbg"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        style="@style/MatchMatch.Vertical"
+        android:overScrollMode="never">
+
+        <LinearLayout style="@style/MatchMatch.Vertical">
+
+            <LinearLayout
+                style="@style/MatchWrap.Vertical"
+                android:layout_marginTop="13dp"
+                android:paddingTop="50dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+                <FrameLayout
+                    android:id="@+id/error_frame"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/error_circle" />
+
+                    <ImageView
+                        android:id="@+id/error_x"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/error_center_x"
+                        android:scaleType="center" />
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/warning_frame"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/warning_circle" />
+
+                    <ImageView
+                        android:id="@+id/warning_x"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/warning_sigh"
+                        android:scaleType="center" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/success_frame"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/success_bow" />
+
+                    <View
+                        android:id="@+id/mask_right"
+                        android:layout_width="35dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="-13dp"
+                        android:layout_gravity="right"
+                        android:background="@android:color/white"/>
+
+                    <View
+                        android:id="@+id/mask_left"
+                        android:layout_width="21dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="-3dp"
+                        android:layout_gravity="left"
+                        android:background="@android:color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/success_circle" />
+
+                    <cn.pedant.SweetAlert.SuccessTickView
+                        android:id="@+id/success_tick"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/payStatus"
+                    style="@style/WrapWrap"
+                    android:layout_marginTop="14dp"
+                    android:text="支付成功"
+                    android:textColor="#ff333333"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/payText"
+                    style="@style/WrapWrap"
+                    android:layout_marginTop="14dp"
+                    android:text="高峰期支付会有延迟"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="48dp"
+                    android:background="#d9d9d9" />
+
+                <LinearLayout
+                    android:id="@+id/orderinfo"
+                    style="@style/MatchWrap.Vertical"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <LinearLayout
+                        style="@style/MatchWrap.Horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:text="订单编号:"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/orderid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="4859874662155"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!--付款人-->
+                    <LinearLayout
+                        style="@style/MatchWrap.Horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:text="联系人:"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="黄员外"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!--电话-->
+                    <LinearLayout
+                        android:id="@+id/phonelayout"
+                        style="@style/MatchWrap.Horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:text="联系电话:"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="1598759874"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/MatchWrap.Horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:text="交易金额:"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/money"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="¥0.01"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    <!--支付方式-->
+                    <LinearLayout
+                        style="@style/MatchWrap.Horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:text="支付方式:"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/paytype"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="微信支付"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/MatchWrap.Horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:text="交易时间:"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="2018-10-15  15:30:20"
+                            android:textColor="@color/paytext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MatchWrap.Horizontal"
+                android:layout_marginTop="24dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/checkorder"
+                    android:layout_width="170dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_selector5_0radius"
+                    android:text="查看订单"
+                    android:textColor="@color/app_theme"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_width="170dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/button_selector1"
+                    android:text="继续浏览"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
