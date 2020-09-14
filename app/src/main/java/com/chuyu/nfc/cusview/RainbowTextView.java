@@ -8,10 +8,10 @@ import android.graphics.Matrix;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 
+import com.chuyu.nfc.R;
 import com.hanks.htextview.base.AnimationListener;
 import com.hanks.htextview.base.DisplayUtils;
 import com.hanks.htextview.base.HTextView;
-import com.chuyu.nfc.R;
 /**
  * Created by Zoello on 2018/11/15.
  * 渐变文字

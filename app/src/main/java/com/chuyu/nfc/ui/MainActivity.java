@@ -26,6 +26,7 @@ import com.chuyu.nfc.bean.nfcRecording;
 import com.chuyu.nfc.tools.EventBus.EventCenter;
 import com.chuyu.nfc.tools.EventBus.EventCode;
 import com.chuyu.nfc.tools.ToastUtil;
+import com.chuyu.nfc.webview.WebViewActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -112,6 +113,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initDatas() {
+
         nfcAdapter = NfcAdapter.getDefaultAdapter(this);
         pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this,
                 getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);

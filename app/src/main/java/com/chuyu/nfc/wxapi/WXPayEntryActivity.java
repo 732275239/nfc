@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.chuyu.nfc.R;
+import com.chuyu.nfc.bean.WXPayResult;
 import com.chuyu.nfc.constant.Constants;
 import com.chuyu.nfc.tools.EventBus.EventCenter;
 import com.chuyu.nfc.tools.EventBus.EventCode;
 import com.chuyu.nfc.tools.StringUtil;
 import com.chuyu.nfc.tools.ToastUtil;
-import com.chuyu.nfc.bean.WXPayResult;
 import com.tencent.mm.opensdk.constants.ConstantsAPI;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
 import com.tencent.mm.opensdk.modelbase.BaseResp;

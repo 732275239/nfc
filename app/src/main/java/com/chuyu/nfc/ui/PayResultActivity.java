@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.R;
 import com.chuyu.nfc.base.BaseActivity;
 import com.chuyu.nfc.base.URLs;
@@ -24,6 +23,7 @@ import com.chuyu.nfc.http.ConnectTask;
 import com.chuyu.nfc.http.ParamUtil;
 import com.chuyu.nfc.tools.EventBus.EventCenter;
 import com.chuyu.nfc.tools.ToastUtil;
+import com.google.gson.reflect.TypeToken;
 
 import java.util.Map;
 

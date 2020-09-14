@@ -16,7 +16,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.R;
 import com.chuyu.nfc.base.ApplicationContext;
 import com.chuyu.nfc.base.BaseActivity;
@@ -34,6 +33,7 @@ import com.chuyu.nfc.tools.Tools;
 import com.chuyu.nfc.tools.bar.SnackbarUtils;
 import com.chuyu.nfc.tools.bar.StatusBarUtil;
 import com.chuyu.nfc.tools.share.SharedPreferencesUtils;
+import com.google.gson.reflect.TypeToken;
 
 import java.util.Map;
 

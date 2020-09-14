@@ -5,8 +5,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.upgrade.util.UpUtils;
+import com.google.gson.reflect.TypeToken;
 
 
 /**

@@ -17,8 +17,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.pnikosis.materialishprogress.ProgressWheel;
 import com.chuyu.nfc.R;
+import com.pnikosis.materialishprogress.ProgressWheel;
 
 import java.util.List;
 

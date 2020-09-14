@@ -14,7 +14,6 @@ import com.yanzhenjie.nohttp.cookie.DBCookieStore;
 
 /**
  * 名称：Application
- * 创建人：xxu
  * 创建时间：2017/4/13 上午 9:56
  * 详细说明：
  */
@@ -53,7 +52,7 @@ public class ApplicationContext extends Application {
 //        initLeakcanary();//初始化内存检测
 //        initHa();
 
-        //千瑞升级
+
         UpgradeApp.registUpload(this);
     }
 

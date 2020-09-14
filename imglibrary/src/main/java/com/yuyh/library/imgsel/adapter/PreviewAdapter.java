@@ -7,11 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.yuyh.library.imgsel.ISNav;
-import com.yuyh.library.imgsel.config.ISListConfig;
 import com.yuyh.library.imgsel.R;
 import com.yuyh.library.imgsel.bean.Image;
 import com.yuyh.library.imgsel.common.Constant;
 import com.yuyh.library.imgsel.common.OnItemClickListener;
+import com.yuyh.library.imgsel.config.ISListConfig;
 
 import java.util.List;
 

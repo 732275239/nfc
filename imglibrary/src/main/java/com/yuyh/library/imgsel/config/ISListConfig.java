@@ -3,7 +3,6 @@ package com.yuyh.library.imgsel.config;
 import android.graphics.Color;
 import android.os.Environment;
 
-import com.yuyh.library.imgsel.common.ImageLoader;
 import com.yuyh.library.imgsel.utils.FileUtils;
 
 import java.io.Serializable;

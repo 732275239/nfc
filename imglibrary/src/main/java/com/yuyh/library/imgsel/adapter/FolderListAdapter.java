@@ -7,10 +7,10 @@ import android.widget.ImageView;
 import com.yuyh.easyadapter.abslistview.EasyLVAdapter;
 import com.yuyh.easyadapter.abslistview.EasyLVHolder;
 import com.yuyh.library.imgsel.ISNav;
-import com.yuyh.library.imgsel.config.ISListConfig;
 import com.yuyh.library.imgsel.R;
 import com.yuyh.library.imgsel.bean.Folder;
 import com.yuyh.library.imgsel.common.OnFolderChangeListener;
+import com.yuyh.library.imgsel.config.ISListConfig;
 
 import java.util.List;
 

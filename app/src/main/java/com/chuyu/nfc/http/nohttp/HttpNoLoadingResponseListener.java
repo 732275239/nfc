@@ -19,8 +19,8 @@ package com.chuyu.nfc.http.nohttp;
 import android.text.TextUtils;
 
 import com.chuyu.nfc.http.Code;
-import com.chuyu.nfc.http.NoLoadingConnectTask;
 import com.chuyu.nfc.http.NetResult;
+import com.chuyu.nfc.http.NoLoadingConnectTask;
 import com.chuyu.nfc.tools.JsonUtil;
 import com.chuyu.nfc.tools.LogUtil;
 import com.yanzhenjie.nohttp.error.NetworkError;

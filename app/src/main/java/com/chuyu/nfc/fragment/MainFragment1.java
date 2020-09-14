@@ -6,6 +6,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -65,6 +66,7 @@ public class MainFragment1 extends BaseFragment {
         switch (eventCenter.getEventCode()) {
             case EventCode.CODE1:
                 String nfcid = (String) eventCenter.getData();
+                Log.e("abc",nfcid);
                 layout1.setVisibility(View.GONE);
                 layout2.setVisibility(View.VISIBLE);
                 company company = MainActivity.uid.get(nfcid);

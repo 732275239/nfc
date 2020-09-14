@@ -16,7 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.R;
 import com.chuyu.nfc.tools.AlertUtils;
 import com.chuyu.nfc.upgrade.NumberProgressBar;
@@ -26,6 +25,7 @@ import com.chuyu.nfc.upgrade.net.BackResult;
 import com.chuyu.nfc.upgrade.net.NetConnectTask;
 import com.chuyu.nfc.upgrade.net.NetRequest;
 import com.chuyu.nfc.upgrade.util.AppUtil;
+import com.google.gson.reflect.TypeToken;
 
 import org.xutils.common.util.DensityUtil;
 import org.xutils.http.RequestParams;

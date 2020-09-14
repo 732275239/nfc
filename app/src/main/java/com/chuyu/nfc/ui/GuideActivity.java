@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.chuyu.nfc.R;
-import com.chuyu.nfc.tools.share.SharedPreferencesUtils;
 import com.chuyu.nfc.tools.StringUtil;
+import com.chuyu.nfc.tools.share.SharedPreferencesUtils;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
 import cn.bingoogolapple.bgabanner.BGALocalImageSize;

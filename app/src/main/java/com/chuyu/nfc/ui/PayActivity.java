@@ -21,7 +21,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alipay.sdk.app.PayTask;
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.R;
 import com.chuyu.nfc.base.BaseActivity;
 import com.chuyu.nfc.base.BaseAppManager;
@@ -42,6 +41,7 @@ import com.chuyu.nfc.tools.PayResult;
 import com.chuyu.nfc.tools.ToastUtil;
 import com.chuyu.nfc.tools.bar.SnackbarUtils;
 import com.chuyu.nfc.webview.WebViewActivity;
+import com.google.gson.reflect.TypeToken;
 import com.tencent.mm.opensdk.modelpay.PayReq;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;

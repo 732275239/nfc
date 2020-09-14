@@ -3,7 +3,6 @@ package com.chuyu.nfc.http;
 import android.app.Activity;
 import android.content.Context;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.base.ApplicationContext;
 import com.chuyu.nfc.base.BaseActivity;
 import com.chuyu.nfc.cusview.LoadingDailog;
@@ -12,6 +11,7 @@ import com.chuyu.nfc.tools.EventBus.EventCode;
 import com.chuyu.nfc.tools.StringUtil;
 import com.chuyu.nfc.tools.ToastUtil;
 import com.chuyu.nfc.ui.LoginActivity;
+import com.google.gson.reflect.TypeToken;
 
 import de.greenrobot.event.EventBus;
 

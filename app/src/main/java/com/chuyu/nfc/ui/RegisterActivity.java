@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.R;
 import com.chuyu.nfc.base.ApplicationContext;
 import com.chuyu.nfc.base.BaseActivity;
@@ -24,11 +23,12 @@ import com.chuyu.nfc.http.NetResult;
 import com.chuyu.nfc.http.ParamUtil;
 import com.chuyu.nfc.tools.EventBus.EventCenter;
 import com.chuyu.nfc.tools.EventBus.EventCode;
-import com.chuyu.nfc.tools.share.SharedPreferencesUtils;
-import com.chuyu.nfc.tools.bar.SnackbarUtils;
 import com.chuyu.nfc.tools.ToastUtil;
 import com.chuyu.nfc.tools.VerificationCodeTools;
+import com.chuyu.nfc.tools.bar.SnackbarUtils;
+import com.chuyu.nfc.tools.share.SharedPreferencesUtils;
 import com.chuyu.nfc.webview.WebViewActivity;
+import com.google.gson.reflect.TypeToken;
 
 import java.util.Map;
 

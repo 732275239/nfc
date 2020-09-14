@@ -6,13 +6,13 @@ import android.content.Intent;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.upgrade.appconfig.ActConfig;
 import com.chuyu.nfc.upgrade.bean.UpgradeInfo;
 import com.chuyu.nfc.upgrade.net.BackResult;
 import com.chuyu.nfc.upgrade.net.NetConnectTask;
 import com.chuyu.nfc.upgrade.net.NetRequest;
 import com.chuyu.nfc.upgrade.util.AppUtil;
+import com.google.gson.reflect.TypeToken;
 
 import org.xutils.http.RequestParams;
 import org.xutils.x;

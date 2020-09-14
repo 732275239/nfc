@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.google.zxing.client.android.Intents;
-import com.journeyapps.barcodescanner.CaptureManager;
-import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 import com.chuyu.nfc.R;
 import com.chuyu.nfc.base.BaseActivity;
 import com.chuyu.nfc.tools.EventBus.EventCenter;
 import com.chuyu.nfc.tools.StringUtil;
+import com.google.zxing.client.android.Intents;
+import com.journeyapps.barcodescanner.CaptureManager;
+import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 
 /**
  * 名称：二维码识别 创建人：ctw 创建时间：2017/4/10 16:30 详细说明：

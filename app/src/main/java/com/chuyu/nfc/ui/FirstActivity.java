@@ -13,6 +13,7 @@ import com.chuyu.nfc.R;
 import com.chuyu.nfc.base.BaseActivity;
 import com.chuyu.nfc.tools.EventBus.EventCenter;
 import com.chuyu.nfc.tools.PermissionPageUtils;
+import com.chuyu.nfc.webview.WebViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +41,6 @@ public class FirstActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-
 
         new Handler().postDelayed(new Runnable() {
             @Override

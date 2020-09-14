@@ -1,7 +1,6 @@
 package com.chuyu.nfc.tools;
 
 
-import com.google.gson.reflect.TypeToken;
 import com.chuyu.nfc.base.BaseActivity;
 import com.chuyu.nfc.base.URLs;
 import com.chuyu.nfc.bean.SmsKey;
@@ -9,6 +8,7 @@ import com.chuyu.nfc.http.CallNet;
 import com.chuyu.nfc.http.ConnectTask;
 import com.chuyu.nfc.http.NetResult;
 import com.chuyu.nfc.http.ParamUtil;
+import com.google.gson.reflect.TypeToken;
 
 import java.util.Map;
 
